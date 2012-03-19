@@ -1,0 +1,2 @@
+module RubyUsersHelper
+end

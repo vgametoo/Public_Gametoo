@@ -1,0 +1,27 @@
+<h1>Listing ruby_users</h1>
+
+<table>
+  <tr>
+    <th>Login</th>
+    <th>Email</th>
+    <th>Forceid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ruby_users.each do |ruby_user| %>
+  <tr>
+    <td><%= ruby_user.Login %></td>
+    <td><%= ruby_user.Email %></td>
+    <td><%= ruby_user.ForceId %></td>
+    <td><%= link_to 'Show', ruby_user %></td>
+    <td><%= link_to 'Edit', edit_ruby_user_path(ruby_user) %></td>
+    <td><%= link_to 'Destroy', ruby_user, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ruby user', new_ruby_user_path %>

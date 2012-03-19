@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Login:</b>
+  <%= @ruby_user.Login %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @ruby_user.Email %>
+</p>
+
+<p>
+  <b>Forceid:</b>
+  <%= @ruby_user.ForceId %>
+</p>
+
+
+<%= link_to 'Edit', edit_ruby_user_path(@ruby_user) %> |
+<%= link_to 'Back', ruby_users_path %>
